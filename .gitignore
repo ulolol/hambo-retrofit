@@ -1,0 +1,38 @@
+# ---- Build output ----------------------------------------------------------
+build/
+port/build-*/
+*.apk
+*.aab
+*.idsig
+port/build-arm64-v8a/libhambo.stripped.so
+
+# ---- Downloaded tooling ---------------------------------------------------
+tools/
+
+# ---- Reverse-engineering workspace ---------------------------------------
+# Contains the original 2012 APK, its decompiled assets and disassembly.
+work/
+
+# ---- Vendored dependencies (fetched on demand by build.py --from-source) --
+port/third_party/dynarmic/
+
+# ---- Credentials / signing material -- NEVER commit ----------------------
+*.keystore
+*.jks
+*.p12
+*.pfx
+*.pem
+*.key
+.env
+.env.*
+*.secret
+
+# ---- OS / editor ----------------------------------------------------------
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
